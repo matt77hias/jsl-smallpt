@@ -1,0 +1,31 @@
+package core;
+
+import java.io.IOException;
+
+public class ImageIO
+{
+	public static final double GAMMA = 2.2;
+
+	public static void writePPM(int w, int h, Vector3[] Ls, String fname)
+	{
+		try
+		{
+			java.io.FileWriter sw = new java.io.FileWriter(new java.io.File(fname));
+
+			String sbegin = String.Format("P3\n{0} {1}\n{2}\n", new Integer(w), new Integer(h), new Integer(255));
+			sw.write(sbegin);
+
+			for (int i = 0; i < w * h; ++i)
+			{
+				String s = String.Format("{0} {1} {2} ", new Byte(MathUtils.toByte(Ls[i].x, GAMMA)), new Byte(MathUtils.toByte(Ls[i].y, GAMMA)), new Byte(MathUtils.toByte(Ls[i].z, GAMMA)));
+				sw.write(s);
+			}
+
+			sw.close();
+		}
+		catch (IOException e)
+		{
+			System.out.println(e.getMessage()); ;
+		}
+	}
+}

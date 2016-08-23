@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual J# Express 2005
+Project("{E6FDF86B-F3D1-11D4-8576-0002A516ECE8}") = "jsl-smallpt", "jsl-smallpt\jsl-smallpt.vjsproj", "{38ED3793-7A1A-48C1-9DD5-B5E6ADE116BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38ED3793-7A1A-48C1-9DD5-B5E6ADE116BB}.Debug|x86.ActiveCfg = Debug|x86
+		{38ED3793-7A1A-48C1-9DD5-B5E6ADE116BB}.Debug|x86.Build.0 = Debug|x86
+		{38ED3793-7A1A-48C1-9DD5-B5E6ADE116BB}.Release|x86.ActiveCfg = Release|x86
+		{38ED3793-7A1A-48C1-9DD5-B5E6ADE116BB}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
