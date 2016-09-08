@@ -24,7 +24,8 @@ class SmallPT
 		for (int y = 0; y < h; ++y)
 		{
 			// pixel row
-			String slog = String.Format("\rRendering ({0} spp) {1}%", new Integer(nb_samples * 4), new Double(((int)(10000.0 * y / (h - 1)))/100.0));
+			String sper = MessageFormat.format("{0,number,0.00}", new Object[] { new Double(((int)(10000.0 * y / (h - 1)))/100.0) });
+			String slog = String.Format("\rRendering ({0} spp) {1}%", new Integer(nb_samples * 4), sper);
 			System.out.print(slog);
 			for (int x = 0; x < w; ++x)
 			{
