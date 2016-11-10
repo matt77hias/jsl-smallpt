@@ -56,7 +56,7 @@ class SmallPT
 			}
 		}
 
-		ImageIO.writePPM(w, h, Ls, "java-image.ppm");
+		ImageIO.writePPM(w, h, Ls, "jsl-image.ppm");
 	}
 
 	// Scene
