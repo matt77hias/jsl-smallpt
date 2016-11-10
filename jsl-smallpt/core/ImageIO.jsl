@@ -17,7 +17,7 @@ public class ImageIO
 
 			for (int i = 0; i < w * h; ++i)
 			{
-				String s = String.Format("{0} {1} {2} ", new Byte(MathUtils.toByte(Ls[i].x, GAMMA)), new Byte(MathUtils.toByte(Ls[i].y, GAMMA)), new Byte(MathUtils.toByte(Ls[i].z, GAMMA)));
+				String s = String.Format("{0} {1} {2} ", new Integer(MathUtils.toByte(Ls[i].x, GAMMA)), new Integer(MathUtils.toByte(Ls[i].y, GAMMA)), new Integer(MathUtils.toByte(Ls[i].z, GAMMA)));
 				sw.write(s);
 			}
 
